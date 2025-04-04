@@ -3,24 +3,60 @@
     "id": "SpectralLint",
     "name": "Spectral Lint",
     "version": "0.7.0",
+    "public": false,
     "publisher": "erwinkramer",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
+    ],
+    "tags": [
+        "spectral",
+        "api",
+        "openapi",
+        "owasp",
+        "linting",
+        "linter",
+        "lint",
+        "api management"
+    ],
     "description": "Linter for OpenAPI definitions.",
     "categories": [
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/extension-icon.png"        
+        "default": "images/extension-icon.png"
+    },
+    "branding": {
+        "color": "#6F42C1",
+        "theme": "dark"
+    },
+    "links": {
+        "support": {
+            "uri": "https://github.com/erwinkramer/ado-spectral/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/erwinkramer/ado-spectral"
     },
     "files": [
         {
             "path": "SpectralLintTask"
+        },
+        {
+            "path": "images",
+            "addressable": true
         }
     ],
+    "content": {
+        "details": {
+            "path": "OVERVIEW.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
     "contributions": [
         {
             "id": "custom-build-release-task",
