@@ -51,16 +51,20 @@ async function logOutputFileContent(outputFilePath: string | undefined): Promise
 }
 
 async function run() {
+    var ruleset: string | undefined;
+    var definition: string | undefined;
+    var failSeverity: string | undefined;
+    var outputFormat: string | undefined;
     var outputFilePath: string | undefined;
 
     try {
         const binPath = path.resolve(__dirname, "node_modules/.bin");
         const spectralPath = path.resolve(binPath, "spectral");
 
-        const ruleset: string | undefined = tl.getInput('ruleset', true);
-        const definition: string | undefined = tl.getInput('definition', true);
-        const failSeverity: string | undefined = tl.getInput('failSeverity', true);
-        const outputFormat: string | undefined = tl.getInput('outputFormat', true);
+        ruleset = tl.getInput('ruleset', true);
+        definition = tl.getInput('definition', true);
+        failSeverity = tl.getInput('failSeverity', true);
+        outputFormat = tl.getInput('outputFormat', true);
         outputFilePath = tl.getInput('outputFilePath', false)
 
         if (!ruleset || !definition) {
@@ -98,11 +102,11 @@ async function run() {
         }
     } catch (err: any) {
         console.log("Spectral execution failed with error: ", err);
-        await logOutputFileContent(outputFilePath);
 
         tl.setResult(tl.TaskResult.Failed, err.message);
     }
     finally {
+        await logOutputFileContent(outputFilePath);
     }
 }
 
