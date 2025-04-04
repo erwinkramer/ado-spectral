@@ -2,8 +2,8 @@
     "manifestVersion": 1,
     "id": "SpectralLint",
     "name": "Spectral Lint",
-    "version": "0.9.0",
-    "public": false,
+    "version": "0.11.0",
+    "public": true,
     "publisher": "erwinkramer",
     "targets": [
         {
