@@ -4,7 +4,7 @@
     "name": "SpectralLint",
     "friendlyName": "Spectral Lint",
     "description": "Linter for OpenAPI definitions.",
-    "helpMarkDown": "",
+    "helpMarkDown": "For more details, see [documentation](overview.md).",
     "category": "Utility",
     "author": "erwinkramer",
     "version": {
