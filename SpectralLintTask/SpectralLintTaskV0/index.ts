@@ -40,8 +40,8 @@ async function run() {
             return;
         }
 
-        const isValidDefinition = await validateDefinitionExistence(definition);
-        if (!isValidDefinition) {
+        const isExistingDefinition = await validateDefinitionExistence(definition);
+        if (!isExistingDefinition) {
             return;
         }
 

@@ -63,8 +63,8 @@ async function run() {
             tl.setResult(tl.TaskResult.Failed, 'Ruleset or Definition input is missing');
             return;
         }
-        const isValidDefinition = await validateDefinitionExistence(definition);
-        if (!isValidDefinition) {
+        const isExistingDefinition = await validateDefinitionExistence(definition);
+        if (!isExistingDefinition) {
             return;
         }
         const execResult = await tl.execAsync('spectral', [

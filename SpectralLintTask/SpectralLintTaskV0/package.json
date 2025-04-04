@@ -1,5 +1,5 @@
 {
-  "name": "buildandreleasetask",
+  "name": "SpectralLintTask",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-pipelines-task-lib": "^5.1.0"
+    "azure-pipelines-task-lib": "^5.1.0",
+    "@stoplight/spectral": "^6.14.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
