@@ -42,7 +42,7 @@
     },
     "files": [
         {
-            "path": "SpectralLintTask"
+            "path": "tasks"
         },
         {
             "path": "images",
@@ -65,7 +65,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "SpectralLintTask"
+                "name": "tasks"
             }
         }
     ]

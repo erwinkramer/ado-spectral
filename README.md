@@ -11,7 +11,7 @@ Currently there is only a version `0`, that has been minimally tested.
 ## Building and local testing
 
 ```
-cd SpectralLintTask/SpectralLintTaskV0
+cd tasks/SpectralLintTaskV0
 
 $env:INPUT_ruleset=".spectral/demo-ruleset.yaml"
 $env:INPUT_definition=".spectral/demo-definition-warn.json"
@@ -25,7 +25,7 @@ node index.js
 
 ## Releasing
 
-1. Update the version numbers at [vss-extension.json](/vss-extension.json) and [task.json](/SpectralLintTask/SpectralLintTaskV0/task.json). 
+1. Update the version numbers at [vss-extension.json](/vss-extension.json) and [task.json](/tasks/SpectralLintTaskV0/task.json). 
 2. Create the extension file:
 ```
 tfx extension create --manifest-globs vss-extension.json --output-path releases
