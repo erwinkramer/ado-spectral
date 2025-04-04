@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "SpectralLint",
     "name": "Spectral Lint",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "publisher": "erwinkramer",
     "targets": [
         {

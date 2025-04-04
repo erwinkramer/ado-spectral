@@ -33,6 +33,9 @@ async function validateDefinitionExistence(definition: string): Promise<boolean>
 
 async function run() {
     try {
+        const binPath = path.resolve(__dirname, "node_modules/.bin");
+        const spectralPath = path.resolve(binPath, "spectral");
+
         const ruleset: string | undefined = tl.getInput('ruleset', true);
         const definition: string | undefined = tl.getInput('definition', true);
 
@@ -45,12 +48,10 @@ async function run() {
         if (!isExistingDefinition) {
             return;
         }
+      
+        fs.chmodSync(spectralPath, '755');
+        console.log("Spectral set as executable");
 
-        const binPath = path.resolve(__dirname, "node_modules/.bin");
-        const files = fs.readdirSync(binPath);
-        console.log("Files in .bin:", files);
-
-        const spectralPath = path.resolve(binPath, "spectral");
         const execResult = await tl.execAsync(spectralPath, [
             'lint',
             definition,
