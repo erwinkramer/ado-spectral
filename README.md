@@ -1,5 +1,8 @@
 # Azure Pipelines Spectral Lint Task 👒
 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/erwinkramer/ado-spectral)
+
 ## Introduction
 
 This is the repo for the source code of the [Spectral Lint Task](https://marketplace.visualstudio.com/items?itemName=erwinkramer.SpectralLint) in the Visual Studio Marketplace.
@@ -35,3 +38,14 @@ tfx extension create --manifest-globs vss-extension.json --output-path releases
 ## Design
 
 Follows tips from: https://www.paraesthesia.com/archive/2020/02/25/tips-for-custom-azure-devops-build-tasks/
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
