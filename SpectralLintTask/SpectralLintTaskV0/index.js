@@ -56,12 +56,35 @@ async function validateDefinitionExistence(definition) {
     }
     return true;
 }
+async function logOutputFileContent(outputFilePath) {
+    if (!outputFilePath) {
+        console.log("Spectral output file path not provided.");
+        return;
+    }
+    try {
+        if (fs.existsSync(outputFilePath)) {
+            const content = fs.readFileSync(outputFilePath, 'utf8');
+            console.log("Spectral output file content:");
+            console.log(content);
+        }
+        else {
+            console.log("Spectral output file does not exist.");
+        }
+    }
+    catch (err) {
+        console.log("Failed to read output file content:", err);
+    }
+}
 async function run() {
+    var outputFilePath;
     try {
         const binPath = path.resolve(__dirname, "node_modules/.bin");
         const spectralPath = path.resolve(binPath, "spectral");
         const ruleset = tl.getInput('ruleset', true);
         const definition = tl.getInput('definition', true);
+        const failSeverity = tl.getInput('failSeverity', true);
+        const outputFormat = tl.getInput('outputFormat', true);
+        outputFilePath = tl.getInput('outputFilePath', false);
         if (!ruleset || !definition) {
             tl.setResult(tl.TaskResult.Failed, 'Ruleset or Definition input is missing');
             return;
@@ -72,22 +95,31 @@ async function run() {
         }
         fs.chmodSync(spectralPath, '755');
         console.log("Spectral set as executable");
-        const execResult = await tl.execAsync(spectralPath, [
-            'lint',
-            definition,
-            '-v',
-            '-r',
-            ruleset,
-            '--fail-severity',
-            'hint'
+        const spectralVersionResult = await tl.execAsync(spectralPath, ['--version']);
+        console.log("Spectral version: ", spectralVersionResult);
+        const spectralLintResult = await tl.execAsync(spectralPath, [
+            'lint', definition,
+            '--verbose', true,
+            '--ruleset', ruleset,
+            '--fail-severity', failSeverity,
+            '--display-only-failures', "false",
+            '--fail-on-unmatched-globs', "true",
+            '--ignore-unknown-format', "false",
+            '--format', outputFormat,
+            '--output', outputFilePath //where to output results, can be a single file name, multiple "output.<format>" or missing to print to stdout
         ]);
-        if (execResult !== 0) {
-            tl.setResult(tl.TaskResult.Failed, 'Spectral CLI execution failed');
+        if (spectralLintResult !== 0) {
+            console.log("Spectral execution failed with result: ", spectralLintResult);
+            tl.setResult(tl.TaskResult.Failed, 'Spectral CLI execution failed, with result: ' + spectralLintResult);
             return;
         }
     }
     catch (err) {
+        console.log("Spectral execution failed with error: ", err);
+        await logOutputFileContent(outputFilePath);
         tl.setResult(tl.TaskResult.Failed, err.message);
+    }
+    finally {
     }
 }
 run();

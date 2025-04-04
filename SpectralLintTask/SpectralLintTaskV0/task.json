@@ -29,6 +29,49 @@
             "defaultValue": "https://petstore3.swagger.io/api/v3/openapi.json",
             "required": true,
             "helpMarkDown": "Path to the OpenAPI definition file."
+        },
+        {
+            "name": "failSeverity",
+            "type": "string",
+            "options": {
+                "error": "Error",
+                "warn": "Warning",
+                "info": "Info",
+                "hint": "Hint"
+            },
+            "label": "FailSeverity",
+            "defaultValue": "warn",
+            "required": true,
+            "helpMarkDown": "Fail severity level."
+        },
+        {
+            "name": "outputFormat",
+            "type": "string",
+            "options": {
+                "stylish": "Stylish",
+                "json": "JSON",
+                "sarif": "SARIF",
+                "junit": "JUnit",
+                "html": "HTML",
+                "text": "Text",
+                "teamcity": "TeamCity",
+                "pretty": "Pretty",
+                "github-actions": "GitHub Actions",
+                "markdown": "Markdown",
+                "gitlab": "GitLab"
+            },
+            "label": "OutputFormat",
+            "defaultValue": "json",
+            "required": true,
+            "helpMarkDown": "Output format."
+        },
+        {
+            "name": "OutputFilePath",
+            "type": "string",
+            "label": "OutputFilePath",
+            "defaultValue": "./spectral-lint-report.json",
+            "required": false,
+            "helpMarkDown": "Path to the output file."
         }
     ],
     "execution": {

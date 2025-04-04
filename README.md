@@ -4,10 +4,14 @@
 
 ```
 cd SpectralLintTask/SpectralLintTaskV0
-tsc
-$env:INPUT_ruleset=".spectral/main.yaml"
-$env:INPUT_definition=".spectral/demo.json"
 
+$env:INPUT_ruleset=".spectral/demo-ruleset.yaml"
+$env:INPUT_definition=".spectral/demo-definition.json"
+$env:INPUT_failSeverity="hint"
+$env:INPUT_outputFilePath=".spectral/demo-lint-report.json"
+$env:INPUT_outputFormat="json"
+
+tsc
 node index.js
 ```
 
