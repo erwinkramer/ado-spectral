@@ -6,7 +6,7 @@
 cd SpectralLintTask/SpectralLintTaskV0
 
 $env:INPUT_ruleset=".spectral/demo-ruleset.yaml"
-$env:INPUT_definition=".spectral/demo-definition.json"
+$env:INPUT_definition=".spectral/demo-definition-valid.json"
 $env:INPUT_failSeverity="hint"
 $env:INPUT_outputFilePath=".spectral/demo-lint-report.json"
 $env:INPUT_outputFormat="json"

@@ -76,8 +76,8 @@ async function run() {
         fs.chmodSync(spectralPath, '755');
         console.log("Spectral set as executable");
 
-        const spectralVersionResult = await tl.execAsync(spectralPath, ['--version']);
-        console.log("Spectral version: ", spectralVersionResult);
+        console.log("Spectral version is (on next line)");
+        await tl.execAsync(spectralPath, ['--version']);
 
         const spectralLintResult = await tl.execAsync(spectralPath, [
             'lint', definition,
