@@ -115,7 +115,6 @@ async function run() {
         if (spectralLintResult !== 0) {
             console.log("Spectral execution failed with result: ", spectralLintResult);
             tl.setResult(tl.TaskResult.Failed, 'Spectral CLI execution failed, with result: ' + spectralLintResult);
-            return;
         }
     }
     catch (err) {
@@ -124,6 +123,7 @@ async function run() {
     }
     finally {
         await logOutputFileContent(outputFilePath);
+        process.exit(1); // Ensures task stops immediately
     }
 }
 run();
