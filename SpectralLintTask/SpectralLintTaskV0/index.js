@@ -67,7 +67,11 @@ async function logAndValidateSpectralOutputFile(outputFilePath) {
             console.log("Spectral output file content:");
             console.log(content);
             // Check if the content is an empty array
-            if (content.trim() === '[]') {
+            var contentTrimmed = content.trim();
+            if (contentTrimmed === '[]' ||
+                contentTrimmed === '' ||
+                contentTrimmed === '<?xml version="1.0" encoding="utf-8"?>\n<testsuites>\n</testsuites>' ||
+                contentTrimmed === '| Code | Path | Message | Severity | Start | End | Source |\n| ---- | ---- | ------- | -------- | ----- | --- | ------ |') {
                 return true;
             }
         }
@@ -127,6 +131,7 @@ async function run() {
             tl.setResult(tl.TaskResult.SucceededWithIssues, 'Spectral validation returned issues.');
             return;
         }
+        tl.setResult(tl.TaskResult.Succeeded, 'Spectral validation succeeded.');
     }
     catch (err) {
         console.log("Spectral execution failed with error: ", err);

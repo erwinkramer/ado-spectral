@@ -1,23 +1,25 @@
 [
 	{
-		"code": "oas3-schema",
+		"code": "operation-tag-defined",
 		"path": [
 			"paths",
 			"/banks",
-			"pst"
+			"post",
+			"tags",
+			"0"
 		],
-		"message": "Property \"pst\" is not expected to be here.",
-		"severity": 0,
+		"message": "Operation tags must be defined in global tags.",
+		"severity": 1,
 		"range": {
 			"start": {
-				"line": 117,
-				"character": 14
+				"line": 119,
+				"character": 12
 			},
 			"end": {
-				"line": 174,
-				"character": 34
+				"line": 119,
+				"character": 26
 			}
 		},
-		"source": "c:/Users/erwin/ado-spectral/SpectralLintTask/SpectralLintTaskV0/.spectral/demo-definition-error.json"
+		"source": "c:/Users/erwin/ado-spectral/SpectralLintTask/SpectralLintTaskV0/.spectral/demo-definition-warn.json"
 	}
 ]
