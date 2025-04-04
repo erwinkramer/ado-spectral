@@ -1,4 +1,4 @@
-# Azure Pipelines Spectral Lint Task
+# Azure Pipelines Spectral Lint Task 👒
 
 ## Introduction
 
