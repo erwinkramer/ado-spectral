@@ -9,7 +9,7 @@
     "author": "erwinkramer",
     "version": {
         "Major": 0,
-        "Minor": 7,
+        "Minor": 9,
         "Patch": 0
     },
     "instanceNameFormat": "Echo $(samplestring)",
@@ -66,11 +66,11 @@
             "helpMarkDown": "Output format."
         },
         {
-            "name": "OutputFilePath",
+            "name": "outputFilePath",
             "type": "string",
             "label": "OutputFilePath",
             "defaultValue": "./spectral-lint-report.json",
-            "required": false,
+            "required": true,
             "helpMarkDown": "Path to the output file."
         }
     ],
