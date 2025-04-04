@@ -40,7 +40,7 @@
                 "hint": "Hint"
             },
             "label": "FailSeverity",
-            "defaultValue": "warn",
+            "defaultValue": "error",
             "required": true,
             "helpMarkDown": "Fail severity level."
         },
