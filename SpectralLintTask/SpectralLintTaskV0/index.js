@@ -26,6 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const tl = require("azure-pipelines-task-lib/task");
 const fs = __importStar(require("fs"));
 const https = __importStar(require("https"));
+const path = __importStar(require("path"));
 async function validateDefinitionExistence(definition) {
     if (definition.startsWith('http://') || definition.startsWith('https://')) {
         // Check if the URL exists
@@ -67,7 +68,8 @@ async function run() {
         if (!isExistingDefinition) {
             return;
         }
-        const execResult = await tl.execAsync('spectral', [
+        const spectralPath = path.resolve(__dirname, "node_modules/.bin/spectral");
+        const execResult = await tl.execAsync(spectralPath, [
             'lint',
             definition,
             '-v',

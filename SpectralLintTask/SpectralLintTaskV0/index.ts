@@ -1,6 +1,7 @@
 import tl = require('azure-pipelines-task-lib/task');
 import * as fs from 'fs';
 import * as https from 'https';
+import * as path from 'path';
 
 async function validateDefinitionExistence(definition: string): Promise<boolean> {
     if (definition.startsWith('http://') || definition.startsWith('https://')) {
@@ -45,7 +46,8 @@ async function run() {
             return;
         }
 
-        const execResult = await tl.execAsync('spectral', [
+        const spectralPath = path.resolve(__dirname, "node_modules/.bin/spectral");
+        const execResult = await tl.execAsync(spectralPath, [
             'lint',
             definition,
             '-v',
