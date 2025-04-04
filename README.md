@@ -20,3 +20,7 @@ tfx extension create --manifest-globs vss-extension.json --output-path releases
 ## Design
 
 Follows tips from: https://www.paraesthesia.com/archive/2020/02/25/tips-for-custom-azure-devops-build-tasks/
+
+## Upload
+
+Add to https://marketplace.visualstudio.com/manage/publishers/erwinkramer

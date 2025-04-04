@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "spectral-ado",
-    "name": "spectral-ado",
-    "version": "0.0.1",
+    "id": "SpectralLint",
+    "name": "Spectral Lint",
+    "version": "0.0.5",
     "publisher": "erwinkramer",
     "targets": [
         {
