@@ -18,7 +18,7 @@
             "name": "ruleset",
             "type": "string",
             "label": "Ruleset",
-            "defaultValue": "",
+            "defaultValue": "https://unpkg.com/@stoplight/spectral-owasp-ruleset/dist/ruleset.mjs",
             "required": true,
             "helpMarkDown": "Path to the ruleset file."
         },
