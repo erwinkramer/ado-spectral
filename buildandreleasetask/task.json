@@ -15,12 +15,20 @@
     "instanceNameFormat": "Echo $(samplestring)",
     "inputs": [
         {
-            "name": "samplestring",
+            "name": "ruleset",
             "type": "string",
-            "label": "Sample String",
+            "label": "Ruleset",
             "defaultValue": "",
             "required": true,
-            "helpMarkDown": "A sample string"
+            "helpMarkDown": "Path to the ruleset file."
+        },
+        {
+            "name": "definition",
+            "type": "string",
+            "label": "Definition",
+            "defaultValue": "https://petstore3.swagger.io/api/v3/openapi.json",
+            "required": true,
+            "helpMarkDown": "Path to the OpenAPI definition file."
         }
     ],
     "execution": {
