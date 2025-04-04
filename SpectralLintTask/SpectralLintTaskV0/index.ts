@@ -46,7 +46,11 @@ async function run() {
             return;
         }
 
-        const spectralPath = path.resolve(__dirname, "node_modules/.bin/spectral");
+        const binPath = path.resolve(__dirname, "node_modules/.bin");
+        const files = fs.readdirSync(binPath);
+        console.log("Files in .bin:", files);
+
+        const spectralPath = path.resolve(binPath, "spectral");
         const execResult = await tl.execAsync(spectralPath, [
             'lint',
             definition,
