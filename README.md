@@ -29,7 +29,7 @@ node index.js
 ## Releasing
 
 1. Update the version numbers at [vss-extension.json](/vss-extension.json) and [task.json](/tasks/SpectralLintTaskV0/task.json). 
-2. Create the extension file:
+2. Create the extension file (requires ` npm i -g tfx-cli`):
 ```
 tfx extension create --manifest-globs vss-extension.json --output-path releases
 ```
