@@ -9,6 +9,7 @@ async function validateDefinitionExistence(definition: string): Promise<boolean>
         try {
             await new Promise<void>((resolve, reject) => {
                 https.get(definition, (res) => {
+                    res.resume()
                     if (res.statusCode && res.statusCode >= 200 && res.statusCode < 400) {
                         resolve();
                     } else {
@@ -17,7 +18,7 @@ async function validateDefinitionExistence(definition: string): Promise<boolean>
                 }).on('error', reject);
             });
         } catch (err) {
-            tl.setResult(tl.TaskResult.Failed, `URL validation failed: ${err.message}`);
+            tl.setResult(tl.TaskResult.Failed, `URL validation failed: ${err}`);
             return false;
         }
     } else {

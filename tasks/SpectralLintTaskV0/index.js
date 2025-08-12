@@ -15,13 +15,23 @@ var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (
 }) : function(o, v) {
     o["default"] = v;
 });
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 const tl = require("azure-pipelines-task-lib/task");
 const fs = __importStar(require("fs"));
@@ -33,6 +43,7 @@ async function validateDefinitionExistence(definition) {
         try {
             await new Promise((resolve, reject) => {
                 https.get(definition, (res) => {
+                    res.resume();
                     if (res.statusCode && res.statusCode >= 200 && res.statusCode < 400) {
                         resolve();
                     }
@@ -43,7 +54,7 @@ async function validateDefinitionExistence(definition) {
             });
         }
         catch (err) {
-            tl.setResult(tl.TaskResult.Failed, `URL validation failed: ${err.message}`);
+            tl.setResult(tl.TaskResult.Failed, `URL validation failed: ${err}`);
             return false;
         }
     }
@@ -114,11 +125,11 @@ async function run() {
             'lint', definition,
             '--verbose', true,
             '--ruleset', ruleset,
-            '--fail-severity', failSeverity,
-            '--display-only-failures', "false",
-            '--fail-on-unmatched-globs', "true",
-            '--ignore-unknown-format', "false",
-            '--format', outputFormat,
+            '--fail-severity', failSeverity, //results of this level or above will trigger a failure exit code
+            '--display-only-failures', "false", //only output results equal to or greater than --fail-severity
+            '--fail-on-unmatched-globs', "true", //fail on unmatched glob patterns
+            '--ignore-unknown-format', "false", //do not warn about unmatched formats
+            '--format', outputFormat, //formatters to use for outputting results, more than one can be provided by using multiple flags choices: "json", "stylish", "junit", "html", "text", "teamcity", "pretty", "github-actions", "sarif", "markdown","gitlab"
             '--output', outputFilePath //where to output results, can be a single file name, multiple "output.<format>" or missing to print to stdout
         ]);
         if (spectralLintResult !== 0) {

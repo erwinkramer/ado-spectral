@@ -17,7 +17,7 @@ Currently there is only a version `0`, that has been minimally tested.
 cd tasks/SpectralLintTaskV0
 
 $env:INPUT_ruleset=".spectral/demo-ruleset.yaml"
-$env:INPUT_definition=".spectral/demo-definition-warn.json"
+$env:INPUT_definition="https://petstore3.swagger.io/api/v3/openapi.json"
 $env:INPUT_failSeverity="error"
 $env:INPUT_outputFilePath=".spectral/demo-lint-report.json"
 $env:INPUT_outputFormat="json"
