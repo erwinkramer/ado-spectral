@@ -9,7 +9,7 @@
     "author": "erwinkramer",
     "version": {
         "Major": 0,
-        "Minor": 12,
+        "Minor": 13,
         "Patch": 0
     },
     "instanceNameFormat": "Echo $(samplestring)",
