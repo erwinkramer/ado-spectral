@@ -1,25 +1,6036 @@
 [
 	{
-		"code": "operation-tag-defined",
+		"code": "owasp:api9:2023-inventory-access",
 		"path": [
-			"paths",
-			"/banks",
-			"post",
-			"tags",
+			"servers",
 			"0"
 		],
-		"message": "Operation tags must be defined in global tags.",
+		"message": "Declare intended audience of every server by defining servers[0].x-internal as true/false.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1075
+			},
+			"end": {
+				"line": 0,
+				"character": 1091
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
 		"severity": 1,
 		"range": {
 			"start": {
-				"line": 119,
-				"character": 12
+				"line": 0,
+				"character": 1907
 			},
 			"end": {
-				"line": 119,
-				"character": 26
+				"line": 0,
+				"character": 2266
 			}
 		},
-		"source": "c:/Users/erwin/ado-spectral/tasks/SpectralLintTaskV0/.spectral/demo-definition-warn.json"
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1907
+			},
+			"end": {
+				"line": 0,
+				"character": 2266
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1907
+			},
+			"end": {
+				"line": 0,
+				"character": 2266
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1907
+			},
+			"end": {
+				"line": 0,
+				"character": 2266
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1907
+			},
+			"end": {
+				"line": 0,
+				"character": 2266
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1907
+			},
+			"end": {
+				"line": 0,
+				"character": 2266
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 1914
+			},
+			"end": {
+				"line": 0,
+				"character": 2091
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2102
+			},
+			"end": {
+				"line": 0,
+				"character": 2138
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2146
+			},
+			"end": {
+				"line": 0,
+				"character": 2176
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"put",
+			"responses",
+			"422"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2184
+			},
+			"end": {
+				"line": 0,
+				"character": 2221
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2774
+			},
+			"end": {
+				"line": 0,
+				"character": 3089
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2774
+			},
+			"end": {
+				"line": 0,
+				"character": 3089
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2774
+			},
+			"end": {
+				"line": 0,
+				"character": 3089
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2774
+			},
+			"end": {
+				"line": 0,
+				"character": 3089
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2774
+			},
+			"end": {
+				"line": 0,
+				"character": 3089
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2774
+			},
+			"end": {
+				"line": 0,
+				"character": 3089
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2781
+			},
+			"end": {
+				"line": 0,
+				"character": 2958
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 2969
+			},
+			"end": {
+				"line": 0,
+				"character": 2999
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet",
+			"post",
+			"responses",
+			"422"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3007
+			},
+			"end": {
+				"line": 0,
+				"character": 3044
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3591
+			},
+			"end": {
+				"line": 0,
+				"character": 3918
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3591
+			},
+			"end": {
+				"line": 0,
+				"character": 3918
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3591
+			},
+			"end": {
+				"line": 0,
+				"character": 3918
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3591
+			},
+			"end": {
+				"line": 0,
+				"character": 3918
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3591
+			},
+			"end": {
+				"line": 0,
+				"character": 3918
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3591
+			},
+			"end": {
+				"line": 0,
+				"character": 3918
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3598
+			},
+			"end": {
+				"line": 0,
+				"character": 3824
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3676
+			},
+			"end": {
+				"line": 0,
+				"character": 3734
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/xml",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3766
+			},
+			"end": {
+				"line": 0,
+				"character": 3824
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/findByStatus",
+			"get",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 3836
+			},
+			"end": {
+				"line": 0,
+				"character": 3873
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4311
+			},
+			"end": {
+				"line": 0,
+				"character": 4351
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"parameters",
+			"0",
+			"schema",
+			"items"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4335
+			},
+			"end": {
+				"line": 0,
+				"character": 4351
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"parameters",
+			"0",
+			"schema",
+			"items"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4335
+			},
+			"end": {
+				"line": 0,
+				"character": 4351
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4368
+			},
+			"end": {
+				"line": 0,
+				"character": 4692
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4368
+			},
+			"end": {
+				"line": 0,
+				"character": 4692
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4368
+			},
+			"end": {
+				"line": 0,
+				"character": 4692
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4368
+			},
+			"end": {
+				"line": 0,
+				"character": 4692
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4368
+			},
+			"end": {
+				"line": 0,
+				"character": 4692
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4368
+			},
+			"end": {
+				"line": 0,
+				"character": 4692
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4375
+			},
+			"end": {
+				"line": 0,
+				"character": 4601
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4453
+			},
+			"end": {
+				"line": 0,
+				"character": 4511
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/xml",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4543
+			},
+			"end": {
+				"line": 0,
+				"character": 4601
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/findByTags",
+			"get",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4613
+			},
+			"end": {
+				"line": 0,
+				"character": 4647
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api1:2023-no-numeric-ids",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Use random IDs that cannot be guessed. UUIDs are preferred but any other random string will do.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4989
+			},
+			"end": {
+				"line": 0,
+				"character": 5023
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 4989
+			},
+			"end": {
+				"line": 0,
+				"character": 5023
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5039
+			},
+			"end": {
+				"line": 0,
+				"character": 5353
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5039
+			},
+			"end": {
+				"line": 0,
+				"character": 5353
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5039
+			},
+			"end": {
+				"line": 0,
+				"character": 5353
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5039
+			},
+			"end": {
+				"line": 0,
+				"character": 5353
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5039
+			},
+			"end": {
+				"line": 0,
+				"character": 5353
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5039
+			},
+			"end": {
+				"line": 0,
+				"character": 5353
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5046
+			},
+			"end": {
+				"line": 0,
+				"character": 5223
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5234
+			},
+			"end": {
+				"line": 0,
+				"character": 5270
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"get",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5278
+			},
+			"end": {
+				"line": 0,
+				"character": 5308
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api1:2023-no-numeric-ids",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Use random IDs that cannot be guessed. UUIDs are preferred but any other random string will do.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5723
+			},
+			"end": {
+				"line": 0,
+				"character": 5757
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5723
+			},
+			"end": {
+				"line": 0,
+				"character": 5757
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5850
+			},
+			"end": {
+				"line": 0,
+				"character": 5866
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5850
+			},
+			"end": {
+				"line": 0,
+				"character": 5866
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"parameters",
+			"2",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5963
+			},
+			"end": {
+				"line": 0,
+				"character": 5979
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"parameters",
+			"2",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5963
+			},
+			"end": {
+				"line": 0,
+				"character": 5979
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5995
+			},
+			"end": {
+				"line": 0,
+				"character": 6265
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5995
+			},
+			"end": {
+				"line": 0,
+				"character": 6265
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5995
+			},
+			"end": {
+				"line": 0,
+				"character": 6265
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5995
+			},
+			"end": {
+				"line": 0,
+				"character": 6265
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5995
+			},
+			"end": {
+				"line": 0,
+				"character": 6265
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 5995
+			},
+			"end": {
+				"line": 0,
+				"character": 6265
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6002
+			},
+			"end": {
+				"line": 0,
+				"character": 6179
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"post",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6190
+			},
+			"end": {
+				"line": 0,
+				"character": 6220
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6524
+			},
+			"end": {
+				"line": 0,
+				"character": 6540
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6524
+			},
+			"end": {
+				"line": 0,
+				"character": 6540
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api1:2023-no-numeric-ids",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Use random IDs that cannot be guessed. UUIDs are preferred but any other random string will do.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6629
+			},
+			"end": {
+				"line": 0,
+				"character": 6663
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6629
+			},
+			"end": {
+				"line": 0,
+				"character": 6663
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6679
+			},
+			"end": {
+				"line": 0,
+				"character": 6801
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6679
+			},
+			"end": {
+				"line": 0,
+				"character": 6801
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6679
+			},
+			"end": {
+				"line": 0,
+				"character": 6801
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6679
+			},
+			"end": {
+				"line": 0,
+				"character": 6801
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6679
+			},
+			"end": {
+				"line": 0,
+				"character": 6801
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6679
+			},
+			"end": {
+				"line": 0,
+				"character": 6801
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6686
+			},
+			"end": {
+				"line": 0,
+				"character": 6714
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}",
+			"delete",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 6722
+			},
+			"end": {
+				"line": 0,
+				"character": 6756
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api1:2023-no-numeric-ids",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Use random IDs that cannot be guessed. UUIDs are preferred but any other random string will do.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7116
+			},
+			"end": {
+				"line": 0,
+				"character": 7150
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7116
+			},
+			"end": {
+				"line": 0,
+				"character": 7150
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7257
+			},
+			"end": {
+				"line": 0,
+				"character": 7273
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7257
+			},
+			"end": {
+				"line": 0,
+				"character": 7273
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"requestBody",
+			"content",
+			"application/octet-stream",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7340
+			},
+			"end": {
+				"line": 0,
+				"character": 7374
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7391
+			},
+			"end": {
+				"line": 0,
+				"character": 7645
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7391
+			},
+			"end": {
+				"line": 0,
+				"character": 7645
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7391
+			},
+			"end": {
+				"line": 0,
+				"character": 7645
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7391
+			},
+			"end": {
+				"line": 0,
+				"character": 7645
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7391
+			},
+			"end": {
+				"line": 0,
+				"character": 7645
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7391
+			},
+			"end": {
+				"line": 0,
+				"character": 7645
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7398
+			},
+			"end": {
+				"line": 0,
+				"character": 7518
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7529
+			},
+			"end": {
+				"line": 0,
+				"character": 7562
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/pet/{petId}/uploadImage",
+			"post",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7570
+			},
+			"end": {
+				"line": 0,
+				"character": 7600
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-validation",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses"
+		],
+		"message": "Missing error response of either 400, 422 or 4XX.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7901
+			},
+			"end": {
+				"line": 0,
+				"character": 8109
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7908
+			},
+			"end": {
+				"line": 0,
+				"character": 8060
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api3:2023-constrained-additionalProperties",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Objects should not allow unconstrained additionalProperties.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 7986
+			},
+			"end": {
+				"line": 0,
+				"character": 8060
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api3:2023-no-additionalProperties",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema",
+			"additionalProperties"
+		],
+		"message": "If the additionalProperties keyword is used it must be set to false.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8026
+			},
+			"end": {
+				"line": 0,
+				"character": 8060
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/store/inventory",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema",
+			"additionalProperties"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8026
+			},
+			"end": {
+				"line": 0,
+				"character": 8060
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-write-restricted",
+		"path": [
+			"paths",
+			"/store/order",
+			"post"
+		],
+		"message": "This write operation is not protected by any security scheme.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8165
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8556
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8556
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8556
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8556
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8556
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8556
+			},
+			"end": {
+				"line": 0,
+				"character": 8808
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8563
+			},
+			"end": {
+				"line": 0,
+				"character": 8677
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8688
+			},
+			"end": {
+				"line": 0,
+				"character": 8718
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order",
+			"post",
+			"responses",
+			"422"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8726
+			},
+			"end": {
+				"line": 0,
+				"character": 8763
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-read-restricted",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get"
+		],
+		"message": "This read operation is not protected by any security scheme.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 8845
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api1:2023-no-numeric-ids",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Use random IDs that cannot be guessed. UUIDs are preferred but any other random string will do.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9168
+			},
+			"end": {
+				"line": 0,
+				"character": 9202
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9168
+			},
+			"end": {
+				"line": 0,
+				"character": 9202
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9218
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9218
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9218
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9218
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9218
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9218
+			},
+			"end": {
+				"line": 0,
+				"character": 9538
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9225
+			},
+			"end": {
+				"line": 0,
+				"character": 9406
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9417
+			},
+			"end": {
+				"line": 0,
+				"character": 9453
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"get",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9461
+			},
+			"end": {
+				"line": 0,
+				"character": 9493
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-write-restricted",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete"
+		],
+		"message": "This write operation is not protected by any security scheme.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9551
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api1:2023-no-numeric-ids",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Use random IDs that cannot be guessed. UUIDs are preferred but any other random string will do.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9904
+			},
+			"end": {
+				"line": 0,
+				"character": 9938
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9904
+			},
+			"end": {
+				"line": 0,
+				"character": 9938
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9954
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9954
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9954
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9954
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9954
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9954
+			},
+			"end": {
+				"line": 0,
+				"character": 10120
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9961
+			},
+			"end": {
+				"line": 0,
+				"character": 9991
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 9999
+			},
+			"end": {
+				"line": 0,
+				"character": 10035
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/store/order/{orderId}",
+			"delete",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10043
+			},
+			"end": {
+				"line": 0,
+				"character": 10075
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-write-restricted",
+		"path": [
+			"paths",
+			"/user",
+			"post"
+		],
+		"message": "This write operation is not protected by any security scheme.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10141
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-validation",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses"
+		],
+		"message": "Missing error response of either 400, 422 or 4XX.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10564
+			},
+			"end": {
+				"line": 0,
+				"character": 10798
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user",
+			"post",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10571
+			},
+			"end": {
+				"line": 0,
+				"character": 10750
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-write-restricted",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post"
+		],
+		"message": "This write operation is not protected by any security scheme.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 10834
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"requestBody",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11067
+			},
+			"end": {
+				"line": 0,
+				"character": 11126
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-validation",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses"
+		],
+		"message": "Missing error response of either 400, 422 or 4XX.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11144
+			},
+			"end": {
+				"line": 0,
+				"character": 11378
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/createWithList",
+			"post",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11151
+			},
+			"end": {
+				"line": 0,
+				"character": 11330
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-read-restricted",
+		"path": [
+			"paths",
+			"/user/login",
+			"get"
+		],
+		"message": "This read operation is not protected by any security scheme.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11404
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11635
+			},
+			"end": {
+				"line": 0,
+				"character": 11651
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11635
+			},
+			"end": {
+				"line": 0,
+				"character": 11651
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-no-credentials-in-url",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"parameters",
+			"1",
+			"name"
+		],
+		"message": "Security credentials detected in path parameter: password.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11662
+			},
+			"end": {
+				"line": 0,
+				"character": 11672
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11765
+			},
+			"end": {
+				"line": 0,
+				"character": 11781
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"parameters",
+			"1",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11765
+			},
+			"end": {
+				"line": 0,
+				"character": 11781
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11797
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11797
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11797
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11797
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11797
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11797
+			},
+			"end": {
+				"line": 0,
+				"character": 12292
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"headers"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11852
+			},
+			"end": {
+				"line": 0,
+				"character": 12078
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-cors-origin",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"headers"
+		],
+		"message": "Header `headers.Access-Control-Allow-Origin` should be defined on all responses.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11852
+			},
+			"end": {
+				"line": 0,
+				"character": 12078
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"headers",
+			"X-Rate-Limit",
+			"schema"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 11929
+			},
+			"end": {
+				"line": 0,
+				"character": 11963
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"headers",
+			"X-Expires-After",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12041
+			},
+			"end": {
+				"line": 0,
+				"character": 12078
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/xml",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12121
+			},
+			"end": {
+				"line": 0,
+				"character": 12137
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/xml",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12121
+			},
+			"end": {
+				"line": 0,
+				"character": 12137
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12169
+			},
+			"end": {
+				"line": 0,
+				"character": 12185
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"200",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12169
+			},
+			"end": {
+				"line": 0,
+				"character": 12185
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/login",
+			"get",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12196
+			},
+			"end": {
+				"line": 0,
+				"character": 12247
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-read-restricted",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get"
+		],
+		"message": "This read operation is not protected by any security scheme.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12319
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-validation",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses"
+		],
+		"message": "Missing error response of either 400, 422 or 4XX.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12488
+			},
+			"end": {
+				"line": 0,
+				"character": 12577
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/logout",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12495
+			},
+			"end": {
+				"line": 0,
+				"character": 12532
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-read-restricted",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get"
+		],
+		"message": "This read operation is not protected by any security scheme.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12608
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12884
+			},
+			"end": {
+				"line": 0,
+				"character": 12900
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12884
+			},
+			"end": {
+				"line": 0,
+				"character": 12900
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12916
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12916
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12916
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12916
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12916
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12916
+			},
+			"end": {
+				"line": 0,
+				"character": 13239
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 12923
+			},
+			"end": {
+				"line": 0,
+				"character": 13102
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13113
+			},
+			"end": {
+				"line": 0,
+				"character": 13155
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"get",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13163
+			},
+			"end": {
+				"line": 0,
+				"character": 13194
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-write-restricted",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put"
+		],
+		"message": "This write operation is not protected by any security scheme.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13249
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13503
+			},
+			"end": {
+				"line": 0,
+				"character": 13519
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13503
+			},
+			"end": {
+				"line": 0,
+				"character": 13519
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13833
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13833
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13833
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13833
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13833
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13833
+			},
+			"end": {
+				"line": 0,
+				"character": 13997
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13840
+			},
+			"end": {
+				"line": 0,
+				"character": 13877
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13885
+			},
+			"end": {
+				"line": 0,
+				"character": 13913
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"put",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 13921
+			},
+			"end": {
+				"line": 0,
+				"character": 13952
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-write-restricted",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete"
+		],
+		"message": "This write operation is not protected by any security scheme.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14010
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14269
+			},
+			"end": {
+				"line": 0,
+				"character": 14285
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"parameters",
+			"0",
+			"schema"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14269
+			},
+			"end": {
+				"line": 0,
+				"character": 14285
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14301
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit-responses-429",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing rate limiting response in responses[429].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14301
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14301
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-401",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[401].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14301
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14301
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api8:2023-define-error-responses-500",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses"
+		],
+		"message": "Operation is missing responses[500].content.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14301
+			},
+			"end": {
+				"line": 0,
+				"character": 14471
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses",
+			"200"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14308
+			},
+			"end": {
+				"line": 0,
+				"character": 14337
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses",
+			"400"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14345
+			},
+			"end": {
+				"line": 0,
+				"character": 14387
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-rate-limit",
+		"path": [
+			"paths",
+			"/user/{username}",
+			"delete",
+			"responses",
+			"404"
+		],
+		"message": "All 2XX and 4XX responses should define rate limiting headers.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14395
+			},
+			"end": {
+				"line": 0,
+				"character": 14426
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"Order",
+			"properties",
+			"id"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14546
+			},
+			"end": {
+				"line": 0,
+				"character": 14593
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"Order",
+			"properties",
+			"petId"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14603
+			},
+			"end": {
+				"line": 0,
+				"character": 14654
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"Order",
+			"properties",
+			"quantity"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14667
+			},
+			"end": {
+				"line": 0,
+				"character": 14713
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Order",
+			"properties",
+			"shipDate"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14726
+			},
+			"end": {
+				"line": 0,
+				"character": 14763
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"Category",
+			"properties",
+			"id"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 14985
+			},
+			"end": {
+				"line": 0,
+				"character": 15031
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Category",
+			"properties",
+			"name"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15040
+			},
+			"end": {
+				"line": 0,
+				"character": 15073
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"Category",
+			"properties",
+			"name"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15040
+			},
+			"end": {
+				"line": 0,
+				"character": 15073
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"id"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15146
+			},
+			"end": {
+				"line": 0,
+				"character": 15193
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"username"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15206
+			},
+			"end": {
+				"line": 0,
+				"character": 15242
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"username"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15206
+			},
+			"end": {
+				"line": 0,
+				"character": 15242
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"firstName"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15256
+			},
+			"end": {
+				"line": 0,
+				"character": 15289
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"firstName"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15256
+			},
+			"end": {
+				"line": 0,
+				"character": 15289
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"lastName"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15302
+			},
+			"end": {
+				"line": 0,
+				"character": 15336
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"lastName"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15302
+			},
+			"end": {
+				"line": 0,
+				"character": 15336
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"email"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15346
+			},
+			"end": {
+				"line": 0,
+				"character": 15389
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"email"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15346
+			},
+			"end": {
+				"line": 0,
+				"character": 15389
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"password"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15402
+			},
+			"end": {
+				"line": 0,
+				"character": 15436
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"password"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15402
+			},
+			"end": {
+				"line": 0,
+				"character": 15436
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"phone"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15446
+			},
+			"end": {
+				"line": 0,
+				"character": 15480
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"phone"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15446
+			},
+			"end": {
+				"line": 0,
+				"character": 15480
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"User",
+			"properties",
+			"userStatus"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15495
+			},
+			"end": {
+				"line": 0,
+				"character": 15569
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"Tag",
+			"properties",
+			"id"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15637
+			},
+			"end": {
+				"line": 0,
+				"character": 15671
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Tag",
+			"properties",
+			"name"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15680
+			},
+			"end": {
+				"line": 0,
+				"character": 15696
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"Tag",
+			"properties",
+			"name"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15680
+			},
+			"end": {
+				"line": 0,
+				"character": 15696
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"id"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15795
+			},
+			"end": {
+				"line": 0,
+				"character": 15842
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"name"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15851
+			},
+			"end": {
+				"line": 0,
+				"character": 15886
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"name"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15851
+			},
+			"end": {
+				"line": 0,
+				"character": 15886
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"photoUrls"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15952
+			},
+			"end": {
+				"line": 0,
+				"character": 16040
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"photoUrls",
+			"items"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15999
+			},
+			"end": {
+				"line": 0,
+				"character": 16040
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"photoUrls",
+			"items"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 15999
+			},
+			"end": {
+				"line": 0,
+				"character": 16040
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"components",
+			"schemas",
+			"Pet",
+			"properties",
+			"tags"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16051
+			},
+			"end": {
+				"line": 0,
+				"character": 16132
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-integer-limit-legacy",
+		"path": [
+			"components",
+			"schemas",
+			"ApiResponse",
+			"properties",
+			"code"
+		],
+		"message": "Schema of type integer must specify minimum and maximum.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16315
+			},
+			"end": {
+				"line": 0,
+				"character": 16349
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"ApiResponse",
+			"properties",
+			"type"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16358
+			},
+			"end": {
+				"line": 0,
+				"character": 16374
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"ApiResponse",
+			"properties",
+			"type"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16358
+			},
+			"end": {
+				"line": 0,
+				"character": 16374
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-limit",
+		"path": [
+			"components",
+			"schemas",
+			"ApiResponse",
+			"properties",
+			"message"
+		],
+		"message": "Schema of type string must specify maxLength, enum, or const.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16386
+			},
+			"end": {
+				"line": 0,
+				"character": 16402
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-string-restricted",
+		"path": [
+			"components",
+			"schemas",
+			"ApiResponse",
+			"properties",
+			"message"
+		],
+		"message": "Schema of type string should specify a format, pattern, enum, or const.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16386
+			},
+			"end": {
+				"line": 0,
+				"character": 16402
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "oas3-unused-component",
+		"path": [
+			"components",
+			"requestBodies",
+			"Pet"
+		],
+		"message": "Potentially unused component has been detected.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16457
+			},
+			"end": {
+				"line": 0,
+				"character": 16660
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "oas3-unused-component",
+		"path": [
+			"components",
+			"requestBodies",
+			"UserArray"
+		],
+		"message": "Potentially unused component has been detected.",
+		"severity": 1,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16677
+			},
+			"end": {
+				"line": 0,
+				"character": 16813
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api4:2023-array-limit",
+		"path": [
+			"components",
+			"requestBodies",
+			"UserArray",
+			"content",
+			"application/json",
+			"schema"
+		],
+		"message": "Schema of type array must specify maxItems.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16754
+			},
+			"end": {
+				"line": 0,
+				"character": 16813
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-jwt-best-practices",
+		"path": [
+			"components",
+			"securitySchemes",
+			"petstore_auth"
+		],
+		"message": "Security schemes using JWTs must explicitly declare support for RFC8725 in the description.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16855
+			},
+			"end": {
+				"line": 0,
+				"character": 17040
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
+	},
+	{
+		"code": "owasp:api2:2023-short-lived-access-tokens",
+		"path": [
+			"components",
+			"securitySchemes",
+			"petstore_auth",
+			"flows",
+			"implicit"
+		],
+		"message": "Authentication scheme does not appear to support refresh tokens, meaning access tokens likely do not expire.",
+		"severity": 0,
+		"range": {
+			"start": {
+				"line": 0,
+				"character": 16892
+			},
+			"end": {
+				"line": 0,
+				"character": 17040
+			}
+		},
+		"source": "https://petstore3.swagger.io/api/v3/openapi.json"
 	}
 ]
