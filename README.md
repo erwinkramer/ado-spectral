@@ -32,7 +32,7 @@ node index.js
 2. Create the extension file (requires `npm i -g tfx-cli`):
 
     ```bash
-        tfx extension create --manifest-globs vss-extension.json --output-path releases
+    tfx extension create --manifest-globs vss-extension.json --output-path releases
     ```
 
 3. [Add to the marketplace](https://marketplace.visualstudio.com/manage/publishers/erwinkramer).
