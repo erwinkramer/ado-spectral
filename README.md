@@ -7,13 +7,13 @@
 
 This is the repo for the source code of the [Spectral Lint Task](https://marketplace.visualstudio.com/items?itemName=erwinkramer.SpectralLint) in the Visual Studio Marketplace.
 
-## Status 
+## Status
 
 Currently there is only a version `0`, that has been minimally tested.
 
 ## Building and local testing
 
-```
+```powershell
 cd tasks/SpectralLintTaskV0
 
 $env:INPUT_ruleset=".spectral/demo-ruleset.yaml"
@@ -28,16 +28,18 @@ node index.js
 
 ## Releasing
 
-1. Update the version numbers at [vss-extension.json](/vss-extension.json) and [task.json](/tasks/SpectralLintTaskV0/task.json). 
+1. Update the version numbers at [vss-extension.json](/vss-extension.json) and [task.json](/tasks/SpectralLintTaskV0/task.json).
 2. Create the extension file (requires `npm i -g tfx-cli`):
-```
-tfx extension create --manifest-globs vss-extension.json --output-path releases
-```
+
+    ```bash
+        tfx extension create --manifest-globs vss-extension.json --output-path releases
+    ```
+
 3. [Add to the marketplace](https://marketplace.visualstudio.com/manage/publishers/erwinkramer).
 
 ## Design
 
-Follows tips from: https://www.paraesthesia.com/archive/2020/02/25/tips-for-custom-azure-devops-build-tasks/
+Follows [tips from Travis Illig](https://www.paraesthesia.com/archive/2020/02/25/tips-for-custom-azure-devops-build-tasks/).
 
 ## License
 
