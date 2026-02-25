@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "azure-devops-extension-sdk": "^4.0.2"
+    "azure-devops-extension-sdk": "^4.2.0"
   },
   "devDependencies": {
-    "typescript": "^5.8.2"
+    "typescript": "^5.9.3"
   }
 }
