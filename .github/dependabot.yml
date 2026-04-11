@@ -5,7 +5,7 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: /
+    directories: ["/", "tasks/SpectralLintTaskV0"]
     schedule:
       interval: weekly
       day: thursday
