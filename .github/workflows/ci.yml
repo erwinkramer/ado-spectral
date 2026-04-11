@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: write
+
 env:
   INPUT_ruleset: .spectral/demo-ruleset.yaml
   INPUT_definition: https://petstore3.swagger.io/api/v3/openapi.json
