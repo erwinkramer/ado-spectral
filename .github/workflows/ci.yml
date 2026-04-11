@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  INPUT_ruleset: .spectral/demo-ruleset.yaml
+  INPUT_definition: https://petstore3.swagger.io/api/v3/openapi.json
+  INPUT_failSeverity: error
+  INPUT_outputFilePath: .spectral/demo-lint-report.json
+  INPUT_outputFormat: json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '25.x'
+      - name: Install, build, and test in all folders
+        run: |
+          for folder in ./ tasks/SpectralLintTaskV0; do
+            echo "Processing $folder"
+            cd "$folder"
+            npm ci
+            npm run build --if-present
+            npm test
+            cd -
+          done
