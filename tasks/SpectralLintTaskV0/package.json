@@ -11,10 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@stoplight/spectral-cli": "^6.16.3",
-    "azure-pipelines-task-lib": "^5.279.0"
+    "azure-pipelines-task-lib": "^5.280.1"
   },
   "devDependencies": {
-    "@types/node": "^26.4.1",
+    "@types/node": "^26.5.1",
     "typescript": "^7.0.2"
   }
 }
