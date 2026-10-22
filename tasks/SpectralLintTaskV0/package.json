@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@stoplight/spectral-cli": "^6.17.0",
-    "azure-pipelines-task-lib": "^5.281.1"
+    "azure-pipelines-task-lib": "^5.281.2"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
