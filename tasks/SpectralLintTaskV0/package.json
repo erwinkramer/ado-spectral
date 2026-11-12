@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stoplight/spectral-cli": "^6.17.0",
-    "azure-pipelines-task-lib": "^5.282.0"
+    "@stoplight/spectral-cli": "^6.17.1",
+    "azure-pipelines-task-lib": "^5.283.0"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
